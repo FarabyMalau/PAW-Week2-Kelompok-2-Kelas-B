@@ -3,347 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review Jurnal | Perancangan Sistem Ringkasan Materi Perkuliahan Berbasis AI</title>
-  <link rel="stylesheet" href="style.css">
+
+  <title>Smart Lecture | Homepage</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  <header>
-    <h1>Perancangan Sistem Ringkasan Materi Perkuliahan Menggunakan Artificial Intelligence Berbasis Web</h1>
-    <p class="subtitle">Review Jurnal Ilmiah — Tugas Pemrograman Aplikasi Web</p>
+<body class="homepage">
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#kekuatan">Kekuatan</a></li>
-        <li><a href="#kekurangan">Kekurangan</a></li>
-        <li><a href="#anggota">Anggota Kelompok</a></li>
-      </ul>
-    </nav>
+  <!-- Header dan navigasi menggunakan Flexbox -->
+  <header class="home-header">
+    <div class="home-container navbar">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">AI</span>
+        <span>Smart Lecture</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Homepage</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#form">Form</a></li>
+          <li><a href="landing-page.html">Review Jurnal</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
 
-    <section id="about">
-      <h2>About / Ringkasan Jurnal</h2>
-      <article>
-        <dl class="journal-meta">
-          <dt>Judul</dt>
-          <dd>Perancangan Sistem Ringkasan Materi Perkuliahan Menggunakan Artificial Intelligence Berbasis Web</dd>
+    <!-- Hero section menggunakan CSS Grid -->
+    <section class="hero-section">
+      <div class="home-container hero-grid">
 
-          <dt>Penulis</dt>
-          <dd>Edwin Prayoga H. dan Ahmad Nugroho</dd>
+        <div class="hero-text">
+          <p class="hero-label">Teknologi AI untuk Pendidikan</p>
 
-          <dt>Afiliasi</dt>
-          <dd>Universitas Nasional Karangturi</dd>
+          <h1>
+            Ringkasan Materi Perkuliahan yang Lebih Cepat dan Terstruktur
+          </h1>
 
-          <dt>Jurnal</dt>
-          <dd>Jurnal Ilmiah Komputer Grafis, Vol. 18, No. 1</dd>
+          <p class="hero-description">
+            Smart Lecture merupakan konsep sistem berbasis web yang membantu
+            dosen dan mahasiswa merekam, mengolah, serta merangkum materi
+            perkuliahan menggunakan Artificial Intelligence.
+          </p>
 
-          <dt>Tahun Terbit</dt>
-          <dd>Juli 2025</dd>
+          <div class="hero-buttons">
+            <a href="#fitur" class="button primary-button">
+              Lihat Fitur
+            </a>
 
-          <dt>Halaman</dt>
-          <dd>1–10</dd>
+            <a href="landing-page.html" class="button secondary-button">
+              Baca Review Jurnal
+            </a>
+          </div>
+        </div>
 
-          <dt>Metode Pengembangan</dt>
-          <dd>Waterfall (analisis, desain, implementasi, pengujian, pemeliharaan)</dd>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="card-icon">AI</span>
 
-          <dt>Metode Pemodelan</dt>
-          <dd>UML (use case, activity, sequence, class diagram)</dd>
-        </dl>
+            <div>
+              <h2>Ringkasan Perkuliahan</h2>
+              <p>Pemrosesan materi berbasis AI</p>
+            </div>
+          </div>
 
-        <p>
-          Jurnal ini membahas perubahan dunia pendidikan akibat perkembangan teknologi dan internet, di mana
-          sebagian mahasiswa lebih menyukai metode belajar berbasis teknologi dibandingkan mencatat secara
-          konvensional di kelas. Penulis merancang sebuah sistem berbasis web yang dapat merekam dan meringkas
-          materi perkuliahan dengan bantuan Artificial Intelligence (AI).
-        </p>
-        <p>
-          Sistem memiliki dua jenis pengguna, yaitu mahasiswa dan dosen. Mahasiswa dapat login, melihat riwayat
-          perkuliahan, dan membuka ringkasan materi. Dosen memiliki fungsi tambahan seperti membuat riwayat
-          perkuliahan, merekam/mengunggah audio kuliah, membuat ringkasan dengan bantuan AI, serta memeriksa dan
-          memperbaiki hasil ringkasan sebelum disimpan. Hasil penelitian berupa rancangan sistem dan desain
-          antarmuka, yang diharapkan dapat diterapkan pada Sistem Informasi Akademik Universitas Nasional
-          Karangturi.
-        </p>
-      </article>
+          <div class="audio-box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-      <aside>
-        <p><strong>Catatan referensi:</strong> p-ISSN 1979-0414 · e-ISSN 2621-6256 ·
-          <a href="http://journal.stekom.ac.id/index.php/pixel" target="_blank" rel="noopener">journal.stekom.ac.id/index.php/pixel</a>
-        </p>
-      </aside>
+          <div class="process-status">
+            <span class="status-dot"></span>
+            AI sedang memproses rekaman
+          </div>
+
+          <div class="summary-preview">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="kekuatan">
-      <h2>Kekuatan Jurnal</h2>
-      <ol class="point-list strength">
+    <!-- Daftar fitur menggunakan CSS Grid -->
+    <section class="feature-section" id="fitur">
+      <div class="home-container">
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">1</span>
-            <span class="point-title">Topik relevan dengan kebutuhan pendidikan saat ini</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Jurnal membahas pemanfaatan AI untuk membantu proses perkuliahan, khususnya pencatatan dan peringkasan materi.</p>
-          </div>
-        </li>
+        <div class="section-title">
+          <p>Fitur Utama</p>
+          <h2>Mendukung Proses Belajar yang Lebih Efisien</h2>
+          <span>
+            Beberapa fitur yang dirancang untuk membantu dosen dan mahasiswa.
+          </span>
+        </div>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">2</span>
-            <span class="point-title">Masalah penelitian dijelaskan secara cukup jelas</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Penulis menghubungkan kegiatan mencatat dengan kemungkinan berkurangnya fokus mahasiswa dalam mengikuti interaksi pembelajaran.</p>
-          </div>
-        </li>
+        <div class="feature-grid">
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">3</span>
-            <span class="point-title">Tujuan sistem sesuai dengan masalah yang diangkat</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Sistem yang dirancang memang diarahkan untuk merekam perkuliahan, menghasilkan ringkasan, dan menyimpan dokumentasi materi.</p>
-          </div>
-        </li>
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Rekam Perkuliahan</h3>
+            <p>
+              Dosen dapat merekam atau mengunggah audio perkuliahan melalui
+              sistem.
+            </p>
+          </article>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">4</span>
-            <span class="point-title">Pengguna sistem dijelaskan dengan jelas</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Jurnal membedakan hak akses mahasiswa dan dosen. Mahasiswa berperan sebagai pengguna ringkasan, sedangkan dosen dapat membuat, memeriksa, dan mengubah ringkasan.</p>
-          </div>
-        </li>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Ringkasan Berbasis AI</h3>
+            <p>
+              AI membantu mengolah rekaman menjadi ringkasan materi yang
+              terstruktur.
+            </p>
+          </article>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">5</span>
-            <span class="point-title">Perancangan sistem disajikan melalui beberapa diagram UML</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Penggunaan use case diagram, activity diagram, sequence diagram, dan class diagram membantu pembaca memahami fungsi, alur aktivitas, proses antarobjek, serta hubungan kelas dalam sistem.</p>
-          </div>
-        </li>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Pemeriksaan Dosen</h3>
+            <p>
+              Dosen dapat memeriksa dan memperbaiki ringkasan sebelum
+              disimpan.
+            </p>
+          </article>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">6</span>
-            <span class="point-title">Alur kerja sistem cukup mudah dipahami</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Prosesnya dimulai dari login, pemilihan riwayat perkuliahan, perekaman atau pengunggahan audio, pemrosesan AI, pemeriksaan hasil, lalu penyimpanan data.</p>
-          </div>
-        </li>
+          <article class="feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Riwayat Materi</h3>
+            <p>
+              Mahasiswa dapat membuka kembali ringkasan materi perkuliahan
+              sebelumnya.
+            </p>
+          </article>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">7</span>
-            <span class="point-title">Rancangan antarmuka ditampilkan secara konkret</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Jurnal menyertakan desain halaman login, beranda, riwayat perkuliahan, ringkasan materi, serta halaman pembuatan riwayat perkuliahan dosen.</p>
-          </div>
-        </li>
+          <article class="feature-card">
+            <div class="feature-icon">05</div>
+            <h3>Akses Pengguna</h3>
+            <p>
+              Sistem membedakan akses dan fungsi untuk dosen serta mahasiswa.
+            </p>
+          </article>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">8</span>
-            <span class="point-title">Terdapat mekanisme pemeriksaan oleh dosen</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Hasil AI tidak langsung dianggap benar, tetapi ditampilkan kembali agar dosen dapat memeriksa dan memperbaiki ringkasan. Hal ini penting karena ringkasan AI masih mungkin mengandung kesalahan.</p>
-          </div>
-        </li>
+          <article class="feature-card">
+            <div class="feature-icon">06</div>
+            <h3>Berbasis Web</h3>
+            <p>
+              Sistem dapat diakses melalui komputer maupun perangkat mobile.
+            </p>
+          </article>
 
-      </ol>
+        </div>
+      </div>
     </section>
 
-    <section id="kekurangan">
-      <h2>Kekurangan Jurnal</h2>
-      <ol class="point-list weakness">
+    <!-- Bagian tentang -->
+    <section class="about-section" id="tentang">
+      <div class="home-container about-grid">
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">1</span>
-            <span class="point-title">Belum terdapat hasil pengujian AI yang terukur</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Jurnal tidak menyajikan ukuran akurasi ringkasan, tingkat kesalahan transkripsi, kualitas hasil ringkasan, atau perbandingan hasil AI dengan ringkasan buatan manusia.</p>
-          </div>
-        </li>
+        <div class="about-text">
+          <p class="section-label">Tentang Website</p>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">2</span>
-            <span class="point-title">Informasi tentang teknologi AI masih terbatas</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Penulis menyebut adanya model AI yang memproses rekaman audio, tetapi tidak menjelaskan nama model, algoritma, layanan, bahasa pemrograman, atau teknologi pengenalan suara yang digunakan.</p>
-          </div>
-        </li>
+          <h2>Dikembangkan Berdasarkan Jurnal Ilmiah</h2>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">3</span>
-            <span class="point-title">Pengujian sistem belum dijelaskan secara rinci</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Disebutkan sistem akan diuji oleh calon pengguna, tetapi jurnal tidak menyampaikan jumlah penguji, instrumen pengujian, skenario pengujian, hasil pengujian, maupun persentase keberhasilan setiap fungsi.</p>
-          </div>
-        </li>
+          <p>
+            Website ini dikembangkan berdasarkan jurnal berjudul
+            <em>
+              Perancangan Sistem Ringkasan Materi Perkuliahan Menggunakan
+              Artificial Intelligence Berbasis Web
+            </em>.
+          </p>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">4</span>
-            <span class="point-title">Tidak ada data kuantitatif tentang manfaat sistem</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Klaim bahwa sistem dapat meningkatkan interaksi, minat belajar, atau kualitas pendidikan belum dibuktikan melalui survei, eksperimen, atau perbandingan sebelum dan sesudah penggunaan sistem.</p>
-          </div>
-        </li>
+          <p>
+            Homepage memberikan gambaran umum mengenai sistem, sedangkan
+            halaman review jurnal membahas isi, kekuatan, dan kekurangan
+            penelitian secara lebih lengkap.
+          </p>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">5</span>
-            <span class="point-title">Ruang lingkup penelitian masih terbatas</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Penelitian dilakukan berdasarkan pengamatan terhadap SIA Universitas Nasional Karangturi dan wawancara dengan mahasiswa serta dosen, tetapi jumlah responden dan karakteristiknya tidak dijelaskan.</p>
-          </div>
-        </li>
+          <a href="landing-page.html" class="about-link">
+            Lihat Review Jurnal →
+          </a>
+        </div>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">6</span>
-            <span class="point-title">Aspek privasi dan keamanan rekaman belum dibahas</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Sistem memproses audio perkuliahan yang kemungkinan memuat suara dosen dan mahasiswa. Jurnal belum menjelaskan izin perekaman, perlindungan data, hak akses rekaman, lama penyimpanan, atau keamanan data.</p>
-          </div>
-        </li>
+        <div class="journal-card">
+          <h3>Informasi Jurnal</h3>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">7</span>
-            <span class="point-title">Kendala teknis belum dianalisis</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Jurnal belum membahas pengaruh kualitas suara, kebisingan kelas, banyaknya pembicara, penggunaan bahasa atau istilah teknis, serta kemungkinan gangguan jaringan terhadap hasil AI.</p>
-          </div>
-        </li>
+          <dl>
+            <div>
+              <dt>Penulis</dt>
+              <dd>Edwin Prayoga H. dan Ahmad Nugroho</dd>
+            </div>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">8</span>
-            <span class="point-title">Rancangan belum menunjukkan implementasi sistem secara nyata</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Walaupun terdapat desain antarmuka menggunakan Figma, isi jurnal lebih banyak menunjukkan rancangan dan tampilan. Belum ditunjukkan bukti bahwa sistem telah digunakan dalam perkuliahan nyata secara menyeluruh.</p>
-          </div>
-        </li>
+            <div>
+              <dt>Tahun</dt>
+              <dd>2025</dd>
+            </div>
 
-        <li class="point-item">
-          <button class="point-toggle" aria-expanded="false">
-            <span class="point-number">9</span>
-            <span class="point-title">Terdapat beberapa ketidakkonsistenan pada informasi artikel</span>
-            <span class="point-icon" aria-hidden="true"></span>
-          </button>
-          <div class="point-detail">
-            <p>Header halaman pertama mencantumkan rentang halaman 1–8, sedangkan bagian lain mencantumkan 1–10. Informasi tanggal penerimaan pada bagian awal juga tampak tidak konsisten dengan riwayat artikel.</p>
-          </div>
-        </li>
+            <div>
+              <dt>Metode</dt>
+              <dd>Waterfall dan UML</dd>
+            </div>
 
-      </ol>
+            <div>
+              <dt>Pengguna</dt>
+              <dd>Dosen dan Mahasiswa</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
     </section>
 
-    <section id="anggota">
-      <h2>Anggota Kelompok</h2>
-      <p class="group-label">Kelompok 2</p>
-      <table class="member-table">
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>NIM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Jannuarta Abi Ambarja H.</td>
-            <td>20250140184</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Faraby Muzakki Malau</td>
-            <td>20240140077</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Drivandi Pratama</td>
-            <td>20240140061</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Alvin Wahyu Pratama</td>
-            <td>20240140259</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Muhammad Daffa Marlan</td>
-            <td>20240140078</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Form dengan label dan input -->
+    <section class="form-section" id="form">
+      <div class="home-container form-grid">
+
+        <div class="form-description">
+          <p class="section-label">Form Masukan</p>
+
+          <h2>Berikan Pendapat Anda</h2>
+
+          <p>
+            Silakan berikan pendapat atau masukan mengenai konsep sistem
+            ringkasan materi perkuliahan berbasis AI.
+          </p>
+        </div>
+
+        <form class="feedback-form">
+
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan email"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="peran">Peran</label>
+            <select id="peran" name="peran" required>
+              <option value="">Pilih peran</option>
+              <option value="mahasiswa">Mahasiswa</option>
+              <option value="dosen">Dosen</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan atau Masukan</label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              placeholder="Tuliskan masukan Anda"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            Kirim Masukan
+          </button>
+
+        </form>
+
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>Tugas Pemrograman Aplikasi Web — Week 2 · Review Jurnal Ilmiah</p>
-    <p>Kelompok 2 — Kelas [Alfabet]</p>
+  <footer class="home-footer">
+    <div class="home-container footer-content">
+      <p>© 2026 Kelompok 2 — Pemrograman Aplikasi Web</p>
+      <a href="landing-page.html">Review Jurnal</a>
+    </div>
   </footer>
-
-  <script>
-    document.querySelectorAll('.point-toggle').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var item = btn.closest('.point-item');
-        var detail = item.querySelector('.point-detail');
-        var isOpen = btn.getAttribute('aria-expanded') === 'true';
-
-        if (isOpen) {
-          detail.style.maxHeight = null;
-          btn.setAttribute('aria-expanded', 'false');
-          item.classList.remove('open');
-        } else {
-          btn.setAttribute('aria-expanded', 'true');
-          item.classList.add('open');
-          detail.style.maxHeight = detail.scrollHeight + 'px';
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>
